@@ -1,2 +1,2 @@
-# Alghoritms-Data-Structures
-Made for practising alghoritms and data structures
+# Algorithms-Data-Structures
+Made for practising algorithms and data structures

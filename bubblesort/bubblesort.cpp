@@ -6,10 +6,10 @@ Author: Jakub Brzazagacz
 */
 
 #include <iostream>
-#include<cstdlib>
+#include <cstdlib>
 using namespace std;
 
-void BubbleSort(int *tab, int n){
+void bubbleSort(int *tab, int n){
     for(int i = 1; i < n; i++){
         for(int j = 0; j < n-1; j++){
             if(tab[j] > tab[j+1]){
@@ -21,7 +21,7 @@ void BubbleSort(int *tab, int n){
     }
 }
 
-void Test_BubbleSort(){
+void TEST_bubbleSort(){
 
     const int n = 50;
     srand((unsigned) time(NULL));
@@ -33,7 +33,7 @@ void Test_BubbleSort(){
         tab[i] = rand() % 10;
         tu++;
         }
-        BubbleSort(tab,n);
+        bubbleSort(tab,n);
         for(int i = 0; i < n; i++){
             ts++;
         }
@@ -54,11 +54,11 @@ void Test_BubbleSort(){
          cout << "Error occured";
     }
     else{
-        cout << "All " << k << " tests passed";
+        cout << "All Bubble Sort (" << k << ") tests passed\n";
     }
 }
 
-int main(){
-    Test_BubbleSort();
-    return 0;
-}
+// int main(){
+//     Test_BubbleSort();
+//     return 0;
+// }

@@ -8,20 +8,20 @@ Author: Jakub Brzazagacz
 #include <iostream>
 using namespace std;
 
-int BinarySearchRecursive(int *tab,int left,int right,int value) {
+int binarySearchRecursive(int *tab,int left,int right,int value){
 	int mid = (left + right)/2;
 	if (tab[mid] == value) {
 		return mid;
 	}
 	else if (value < tab[mid]) {
-		return BinarySearchRecursive(tab, left, mid, value);
+		return binarySearchRecursive(tab, left, mid, value);
 	}
 	else{
-		return BinarySearchRecursive(tab, mid, right, value);
+		return binarySearchRecursive(tab, mid, right, value);
 	}
 }
 
-void Test_BinarySearchRecursive(){
+void TEST_binarySearchRecursive(){
     int x = 12,n = 1,index;
     const int size = 50;
     int tab[size];
@@ -31,15 +31,15 @@ void Test_BinarySearchRecursive(){
             index = j;
         }
     }
-    if(BinarySearchRecursive(tab,0,size-1,x) == index){
-        cout << "Test passed";        
+    if(binarySearchRecursive(tab,0,size-1,x) == index){
+        cout << "All Binary Search tests passed\n";        
     }
     else{
         cout << "Error occured";
     }
 }
 
-int main(){
-    Test_BinarySearchRecursive();
-    return 0;
-}
+// int main(){
+//     Test_BinarySearchRecursive();
+//     return 0;
+// }

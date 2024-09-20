@@ -1,3 +1,10 @@
+/*
+These programs are made for practice with alghoritms
+and data structures. It might contain some bugs.
+
+Author: Jakub Brzazagacz
+*/
+
 #ifndef BINARYSEARCH_H
 #define BINARYSEARCH_H
 
